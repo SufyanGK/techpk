@@ -1,0 +1,269 @@
+
+
+body{
+	background-color: #fff;
+	background-attachment: fixed;
+	
+
+}
+
+header{
+	/*background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));*/
+	height: 25vh;
+	background-size: cover;
+	background-position: center;
+}
+
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 35px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #0078d4;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6 ease;
+}
+
+ul li a:hover{
+	background-color: #0078d4;
+	color: #fff;
+	border-radius: 10px;
+}
+
+.logo img{
+	float: left;
+	width: 200px;
+	margin-top: -20px;
+	margin-left: -10px;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+	
+}
+.title{
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.container{ 
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin: 240px auto;
+}
+.container .box{
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	background: green;
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;	
+}
+.container .box .icon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #0078d4;
+	transition: 0.5s;
+	z-index: 1;
+}
+.container .box:hover .icon{
+	top: 20px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.container .box .icon .fa{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 80px;
+	transition: 0.5s;
+	color: #fff;
+}
+.container .box:hover .icon .fa{
+	font-size: 40px;
+	}
+.container .box .content{
+	position: absolute;
+	top: 100%;
+	height: calc(100% - 100px);
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+
+}	
+.container .box:hover .content{
+	top: 100px;
+
+}
+.container .box .content h3{
+	margin: 0 0 10px;
+	padding: 0;
+	color: white;
+	font-size: 24px;
+}
+.container .box .content p{
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+
+
+
+/*services pages CSS*/
+.servheader{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	background-color:;
+	transform: translate(-50%,-50%);
+}
+.servheader p{
+	color: #0078d4;
+}
+
+.servcontainer{ 
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin-top: 35%;
+	margin: 240px auto;
+}
+.servcontainer .servbox{
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	border-radius: 15px;
+	background:#0078d4;
+	float: left;
+	background-color: #0078d4;
+	color: #fff;
+	margin: 10px;	
+}
+.servcontainer .servbox .servcontent{
+	position: absolute;
+	padding: 50px;
+	text-align: center;
+	
+}
+.servcontainer .servbox .servcontent p{
+	margin-top: 20%;
+	
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+
+
+/* Footer CSS*/
+.footer{
+	width: 100vw;
+	display:block;
+	overflow: hidden;
+	padding: 20px 0;
+	background-color: #0078d4;
+}
+.footer .footercontent{
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	float: right;
+	margin-right: 20%;
+}
+.footer .footercontent li{
+	color: #fff;
+}
+
+.footer .footerlogo img{
+	float: left;
+	width: 150px;
+	margin-top: -15px;
+	margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Test page Css*/
+.bdy{
+	background-color: green;
+}
+.test{
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin-top: 35%;
+	margin-left: 5%;
+	
+}
+.testbox{
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	border-radius: 15px;
+	padding: 10px
+	background:#000;
+	float: left;
+	background-color: #000;
+	color: #fff;
+	margin: 10px;
+}
+.testcontent{
+	position: absolute;
+	color: yellow;
+	text-align: center;
+	padding: 110px;
+}

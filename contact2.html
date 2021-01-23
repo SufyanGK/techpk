@@ -1,0 +1,135 @@
+
+
+    <!-- contact -->
+    <section id="contact-section1">
+        <div class="default-title fadesimple">
+            <h3>online / customer services / chat support</h3>
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+        </div>
+        <div class="container fadesimple">
+            <!--<div class="col-sm-4 col-xs-4 cs-1">-->
+            <!--    <i class="fa fa-map-marker fa-5x" aria-hidden="true"></i>-->
+            <!--    <h4>Head Office</h4>-->
+            <!--    <p>22 Sky Harbour dr, Brampton, L6Y0C1, ON, Canada</p>-->
+            <!--</div>-->
+            <div class="col-sm-4 col-xs-4">
+                <!--<i class="fa fa-phone fa-5x" aria-hidden="true"></i>
+                
+                    <h4>USA Local</h4>
+               
+                <p>+1 (929) 2141268</p>-->
+            </div>
+            <div class="col-sm-4 col-xs-4 cs-1">
+                <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+                <h4>General & Sales Inquiry</h4>
+                <p><a href="mailto:adil.uvconn@gmail.com" class="__cf_email__" data-cfemail="" style="color: gray;">adil.uvconn@gmail.com</a></p>
+            </div>
+            <div class="col-sm-4 col-xs-4">
+                <!--<i class="fa fa-phone fa-5x" aria-hidden="true"></i>
+                
+                    <h4>USA Local</h4>
+               
+                <p>+1 (929) 2141268</p>-->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact us -->
+    <section id="contact-us">
+       
+        <!-- message content -->
+        <div class=" fadesimple">
+            <div class="col-sm-8 container-affix" style="min-height: 530px;">
+                 <div class="default-title">
+           <h1 style="color:#056dd8;" > <i class="fa fa-phone"></i> REQUEST A CALLBACK</h1>
+           <h5 style="color:white;padding:15px;"> Please Fill out the form below and We will call you back.</h5>
+           
+        </div>
+      
+                <form  action="Homepage/callback" method="post" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label> <input class="form-control" data-error="Firstname is required." id="form_name" name="fname" placeholder="" required="required" type="text">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname *</label> <input class="form-control" data-error="Lastname is required." id="form_lastname" name="lname" placeholder="" required="required" type="text">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label> <input class="form-control" data-error="Valid email is required." id="form_email" name="email" placeholder="" required="required" type="email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Phone</label> <input class="form-control" id="form_phone" name="phone" placeholder="" type="tel">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message *</label>
+                                    <textarea class="form-control" data-error="Please,leave us a message." id="form_message" name="message" placeholder="" required="required" rows="4"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="row">
+                         <div class="col-md-9">
+                             <span class="msg-error error"></span>
+                              <div id="recaptcha" class="g-recaptcha" data-sitekey="6Lf05mwUAAAAAKdERO5M5GJ48IVumvfLosCKOyly"></div>
+                            </div>
+                             <div class="col-md-3"><br>
+                                <input type="submit" class="hover-sty button btn-lg btn-2 red btn " id="btn-validate"   value="Get a call back">
+                            </div>
+                      </div>
+                    </div>
+                </form>
+            </div>
+<?php
+            if(isset($_POST['submit']))
+{
+   
+        $message = 'Success';
+    }
+    else
+    {
+        $message = 'Faild';
+    }
+
+?>
+            <!-- end of message content -->
+            <div class="col-sm-4 contact-info contact4-info">
+                <!-- header contact info -->
+            
+                        <img src="<?=base_url()?>assets/template/img/logo/logo.png" class="logo" alt="">
+                        <br>
+                        <p class="email" style="font-size: 19px;">Customer & Technical Support</p>
+                        <p ><a href="mailto:info@zumm.tv" class="__cf_email__" data-cfemail="" style="font-size: 17px;">info@zumm.tv </a></p>
+                        <p  class="email" style="font-size: 20px;">For Sales & General Inquiry</p>
+                        <p><a href="mailto:info@zumm.tv" class="__cf_email__" data-cfemail="" style="font-size: 17px;">info@zumm.tv</a></p>
+                        
+                        
+            </div>
+        </div>
+        <!-- container -->
+    </section>
+    <!-- contact-us / end -->
+    <!-- ===== FOOTER ===== -->
+    <!-- start of section -->
+  
